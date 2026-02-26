@@ -1,0 +1,112 @@
+:root {
+  --padding: 10px;
+}
+
+.main {
+  border: 2px solid black;
+  margin: 30px;
+  display: grid;
+  padding: 5px;
+  grid-template-columns: 2fr 1fr;
+}
+
+
+.header {
+  padding: var(--padding);
+  height: 117px;
+}
+
+.name,
+.work {
+  margin: 0;
+}
+
+.image {
+  background-color: orange;
+  width: 100%;
+  height: 286px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 50%;
+  height: 100px;
+  background-color: black;
+  border: 2px solid silver;
+  border-radius: 50%;
+}
+
+.section-heads {
+  font-family: monospace;
+}
+
+.profile {
+  padding: var(--padding);
+  border-top: 2px solid peru;
+  border-bottom: 2px solid peru;
+}
+
+.experience {
+  padding: var(--padding);
+}
+
+.sidebar {
+    border-left: 2px solid peru;
+}
+.container {
+    display: grid;
+    gap: 2rem;
+}
+
+.company, .date,.details {
+    margin: 0;
+}
+
+.education {
+    display: grid;
+    padding: var(--padding);
+}
+
+.school-name, .year, .degree {
+    margin: 0;
+}
+
+.degree {
+    color: rgb(129, 129, 129);
+}
+
+.education-details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contact {
+     padding: var(--padding);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.icon {
+    height: 20px;
+}
+
+.cont {
+    float: inline-start;
+    padding-left: 100px;
+    direction: rtl;
+}
+
+.icon, .cont {
+    margin: 0;
+}
+
+.interests {
+    padding: var(--padding);
+}
+
