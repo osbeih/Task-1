@@ -103,6 +103,10 @@
   gap: 1rem;
 }
 
+.education-details-container > div >  p {
+  color: rgb(190, 190, 11);
+}
+
 .contact {
   padding: var(--padding);
 }
@@ -164,9 +168,12 @@ ul > li {
     width: 40px;
     height: 40px;
   }
+  .sidebar {
+    border: none;
+  }
   .education-details-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   /* .education-details-container div {
     border: 1px solid red;
@@ -207,7 +214,5 @@ ul > li {
   .name ,.work{
     margin: 0;
   }
-  
-}
 
 
