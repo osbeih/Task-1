@@ -87,6 +87,7 @@
 
 .education {
   display: grid;
+  gap: 15px;
   padding: var(--padding);
 }
 
@@ -107,10 +108,12 @@
 }
 
 .education-details-container > div > p {
-  color: rgb(190, 190, 11);
+  color: #222; 
 }
 
 .contact {
+  display: grid;
+  gap: 15px;
   padding: var(--padding);
 }
 
@@ -136,7 +139,7 @@
 
 .interests {
   display: grid;
-  gap: 0.5rem;
+  gap: 15px;
   padding: var(--padding);
 }
 
