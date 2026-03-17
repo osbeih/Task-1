@@ -1,5 +1,5 @@
 :root {
-  --padding: 10px;
+  --padding: 20px;
 }
 
 .main {
@@ -57,14 +57,12 @@
 
 .section-heads {
   font-family: monospace;
+  margin: 0;
 }
 
 .profile {
   padding: var(--padding);
-  /* border-top: 2px solid peru; */
   border-bottom: 2px solid peru;
-  display: flex;
-  flex-direction: column;
 }
 
 .experience {
@@ -137,7 +135,13 @@
 }
 
 .interests {
+  display: grid;
+  gap: 0.5rem;
   padding: var(--padding);
+}
+
+ul {
+  margin: 0;
 }
 
 ul > li {
@@ -198,7 +202,7 @@ ul > li {
     grid-template-columns: 1fr;
   }
   .left > h1 {
-    font-size: small;
+    font-size: medium;
   }
   .education-details-container {
     display: grid;
