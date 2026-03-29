@@ -12,8 +12,7 @@
 
 .main {
   border: 2px solid black;
-  padding: 5px;
-  width: 50%;
+  max-width: 650px;
 }
 
 .header {
@@ -110,8 +109,9 @@
   font-weight: bold;
 }
 
-.degree, .contact-container p {
-  color: #463F3F;
+.degree,
+.contact-container p {
+  color: #463f3f;
 }
 
 .education-details-container {
@@ -160,6 +160,10 @@ ul > li {
   list-style-type: square;
 }
 
+.rev-container {
+  visibility: none;
+}
+
 @media (max-width: 426px) {
   .header {
     flex-direction: column;
@@ -173,7 +177,8 @@ ul > li {
     font-size: large;
   }
   .main-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
   .image {
     max-width: 130px;
@@ -207,6 +212,14 @@ ul > li {
     display: grid;
     font-size: small;
   }
+  .education {
+    position: relative;
+    bottom: 187vw;
+  }
+  .experience {
+    position: relative;
+    top: 45vw;
+  }
 }
 
 @media (max-width: 376px) {
@@ -229,11 +242,31 @@ ul > li {
     /* position: absolute;
     top: 2%;
     right: 16%; */
+  */ .header {
+    height: 90px;
+  }
+  .name,
+  .work {
+    margin: 0;
+  }
+  .education {
+    position: relative;
+    bottom: 255vw;
+  }
+  .experience {
+    position: relative;
+    top: 50vw;
+  }
 }
-*/ .header {
-  height: 90px;
-}
-.name,
-.work {
-  margin: 0;
+
+@media (max-width: 376px) {
+  .education {
+    position: relative;
+    bottom: 320vw;
+  }
+
+  .experience {
+    position: relative;
+    top: 55vw;
+  }
 }
